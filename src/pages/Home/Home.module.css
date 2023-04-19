@@ -1,1 +1,12 @@
-.Home {}
+html {
+    background-color: whitesmoke;
+}
+
+.Home {
+    color: black;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 35px;
+}
