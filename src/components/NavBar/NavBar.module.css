@@ -1,3 +1,13 @@
+@media (max-width: 991px) {
+    .navBar {
+        max-width: 200px;
+    }
+}
+
+.navBar {
+    background-color: white !important;
+}
+
 .navTitle {
     font-size: 25px !important;
 }

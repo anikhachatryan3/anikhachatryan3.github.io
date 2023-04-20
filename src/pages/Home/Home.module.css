@@ -1,5 +1,5 @@
 html {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     color: black;
     box-sizing: border-box;
 }
@@ -11,10 +11,6 @@ html {
 body {
     margin: 0;
 }
-
-/* .Home {
-    color: black;
-} */
 
 .title {
     font-weight: bold;
@@ -35,7 +31,7 @@ body {
 }
 
 .wide {
-    width: 70%;
+    width: 65%;
     float: left;
     padding-left: 3%;
     min-height: 225px;
@@ -61,8 +57,103 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     display: inline-block;
-    /* background-color: cadetblue; */
+    text-decoration: none;
+    background-color: #0d6efd;
+    color: white;
     border-radius: 5px;
+}
+
+.contact a:hover {
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+    background-color: #0d5cd4;
+    color: #e6e7e8;
+}
+
+.contact a:focus {
+    background-color: #0650bf;
+    color: #d4d5d6;
+}
+
+.experienceWrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    overflow: hidden;
+}
+
+.experienceImage {
+    background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/experience.jpg') no-repeat center center fixed;
+    background-size: 100%;
+    padding: 110px;
+    height: 250px;
+    margin: 0;
+}
+
+.flowductive {
+    padding-top: 2%;
+    display: grid;
+}
+
+.flowductiveTitle {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: left;
+    padding-left: 15%;
+}
+
+.flowductiveDate {
+    grid-row: 1;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-top: 2%;
+    font-style: italic;
+    font-size: 120%;
+    text-align: right;
+    padding-right: 15%;
+}
+
+.flowductivePosition {
+    grid-row: 2;
+    grid-column: 1;
+    text-align: left;
+    padding-left: 15%;
+    font-size: 140%;
+}
+
+.metalab {
+    padding-top: 2%;
+    display: grid;
+}
+
+.metalabTitle {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: left;
+    padding-left: 18%;
+}
+
+.metalabDate {
+    grid-row: 1;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-top: 2%;
+    font-style: italic;
+    font-size: 120%;
+    text-align: right;
+    padding-right: 13%;
+}
+
+.metalabPosition {
+    grid-row: 2;
+    grid-column: 1;
+    text-align: left;
+    padding-left: 18%;
+    font-size: 140%;
 }
 
 .educationWrapper {
@@ -75,7 +166,48 @@ body {
 .educationImage {
     background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/education.jpeg') no-repeat center center fixed;
     background-size: 100%;
-    padding: 130px;
-    height: 300px;
+    padding: 110px;
+    height: 250px;
     margin: 0;
+}
+
+.csun {
+    padding-top: 2%;
+    display: grid;
+}
+
+.csunTitle {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: left;
+    padding-left: 12%;
+}
+
+.csunDate {
+    grid-row: 1;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-top: 2%;
+    font-style: italic;
+    font-size: 120%;
+    text-align: right;
+    padding-right: 17%;
+}
+
+.csunDegree {
+    grid-row: 2;
+    grid-column: 1;
+    text-align: left;
+    padding-left: 12.5%;
+    font-size: 140%;
+}
+
+.csunAchievements {
+    grid-row: 3;
+    grid-column: 1;
+    text-align: left;
+    padding-left: 12.5%;
+    font-size: 120%;
+    margin-top: -1.6%;
 }
