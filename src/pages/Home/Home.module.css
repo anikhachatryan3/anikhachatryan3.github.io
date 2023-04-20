@@ -1,12 +1,81 @@
 html {
     background-color: whitesmoke;
+    color: black;
+    box-sizing: border-box;
 }
 
-.Home {
-    color: black;
+*, *:before, *:after {
+    box-sizing: inherit;
 }
+
+body {
+    margin: 0;
+}
+
+/* .Home {
+    color: black;
+} */
 
 .title {
     font-weight: bold;
     font-size: 35px;
+}
+
+.aboutWrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.narrow {
+    width: 30%;
+    float: left;
+    min-height: 175px;
+}
+
+.wide {
+    width: 70%;
+    float: left;
+    padding-left: 3%;
+    min-height: 225px;
+}
+
+.image {
+    border-radius: 50%;
+    max-width: 75%;
+    height: auto;
+    /* margin-left: 70px; */
+}
+
+.about {
+    font-size: 115%;
+    padding-top: 7%;
+}
+
+.contact a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    /* background-color: cadetblue; */
+    border-radius: 5px;
+}
+
+.educationWrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    overflow: hidden;
+}
+
+.educationImage {
+    background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/education.jpeg') no-repeat center center fixed;
+    background-size: 100%;
+    padding: 130px;
+    height: 300px;
+    margin: 0;
 }
