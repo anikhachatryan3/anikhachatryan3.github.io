@@ -12,12 +12,27 @@ body {
     margin: 0;
 }
 
+/* Tablet size */
+@media (max-width: 991px) {
+    /* About */
+    .aboutWrapper {
+        max-width: 700px;
+    }
+
+    .image {
+        min-width: 90%;
+    }
+
+}
+
 /* About */
 .aboutWrapper {
     max-width: 100%;
     margin: 0 auto;
     padding: 40px;
     overflow: hidden;
+    display: flex;
+    align-items: center; 
 }
 
 .narrow {
@@ -37,12 +52,10 @@ body {
     border-radius: 50%;
     max-width: 73%;
     height: auto;
-    /* margin-left: 70px; */
 }
 
 .about {
     font-size: 115%;
-    padding-top: 7%;
 }
 
 .contact a {
@@ -83,7 +96,7 @@ body {
 
 .experienceImage {
     background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/experience.jpg') no-repeat center center fixed;
-    background-size: 100%;
+    background-size: cover;
     padding: 110px;
     height: 250px;
     margin: 0;
@@ -162,7 +175,7 @@ body {
 
 .projectsImage {
     background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/projects.jpg') no-repeat center center fixed;
-    background-size: 100%;
+    background-size: cover;
     padding: 110px;
     height: 250px;
     margin: 0;
@@ -209,7 +222,7 @@ body {
 
 .educationImage {
     background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/education.jpeg') no-repeat center center fixed;
-    background-size: 100%;
+    background-size: cover;
     padding: 110px;
     height: 250px;
     margin: 0;
