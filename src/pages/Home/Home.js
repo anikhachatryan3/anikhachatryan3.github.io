@@ -4,7 +4,6 @@ import AniImage from '../../assets/Ani.jpg';
 import { GoMarkGithub, GoMail } from 'react-icons/go';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaReact } from 'react-icons/fa';
-// import { Link } from "react-router-dom";
 
 const Home = () => (
   <>

@@ -83,8 +83,10 @@ body {
 .experienceImage {
     background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/experience.jpg') no-repeat center center fixed;
     background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
     padding: 110px;
-    height: 250px;
     margin: 0;
 }
 
@@ -150,7 +152,6 @@ body {
     background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/projects.jpg') no-repeat center center fixed;
     background-size: cover;
     padding: 110px;
-    height: 250px;
     margin: 0;
 }
 
@@ -197,7 +198,6 @@ body {
     background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/education.jpeg') no-repeat center center fixed;
     background-size: cover;
     padding: 110px;
-    height: 250px;
     margin: 0;
 }
 
@@ -274,9 +274,9 @@ body {
         min-width: 90%;
     }
 
+    /* Experience */
     .work {
         display: block;
-        /* padding-bottom: 0; */
     }
 
     .workTitle {
@@ -287,10 +287,12 @@ body {
         text-align: left;
     }
 
+    /* Projects */
     .projectTitle {
         padding-top: 5%;
     }
     
+    /* Education */
     .csun {
         display: block;
     }
@@ -303,8 +305,47 @@ body {
         text-align: left;
     }
 
+    /* Background Images */
+    .experienceImage, .projectsImage, .educationImage {
+        background-attachment: initial;
+    }
+
+    /* Footer */
     .footerLinks a {
         padding-bottom: 4%;
     }
 
+}
+
+/* Phone Size */
+@media (max-width: 594px) {
+    /* About */
+    .aboutWrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .narrow, .wide {
+        width: 100%;
+    }
+
+    .image {
+        min-width: 40%;
+        margin-bottom: 4%;
+    }
+    
+}
+
+/* Change contact button layout for smaller width */
+@media (max-width: 408px) {
+    /* About */
+    .contact {
+        display: grid;
+        justify-content: center;
+    }
+
+    .contact a {
+        margin: 5px;
+    }
 }
