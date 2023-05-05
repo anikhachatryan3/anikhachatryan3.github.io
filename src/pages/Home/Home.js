@@ -61,7 +61,7 @@ const Home = () => (
               </div>
               <div className={`${styles.workTechnologies} ${styles.flowductiveTechnologies}`}>
                 <ul>
-                  <li><b><i>Languages and Frameworks:</i></b>&ensp;React.js, Typescript, Firebase</li>
+                  <li><b><i>Languages and Frameworks:</i></b>&ensp;React.js, TypeScript, Firebase</li>
                 </ul>
               </div>
             </div>
@@ -173,6 +173,34 @@ const Home = () => (
                   Design and Analysis, Advanced Web Engineering, Database Design, Web Engineering, Graphical User Interfaces</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
+        {/* Skills */}
+        <section className={styles.skillsWrapper} alt='skills'>
+          <div>
+            <div>
+              <h1 className={styles.skillsImage} alt='skills image'>Skills</h1>
+            </div>
+            <div className={styles.skillsList}>
+              <dl>
+                <dt className={styles.skillsTitle}>Languages:</dt>
+                  <dd className={styles.skillsItems}>JavaScript, TypeScript, Java, C, Go, PHP</dd>
+                <dt className={styles.skillsTitle}>Frontend:</dt>
+                  <dd className={styles.skillsItems}>React.js, Vue.js, jQuery, Bootstrap, HTML, CSS</dd>
+                <dt className={styles.skillsTitle}>Backend:</dt>
+                  <dd className={styles.skillsItems}>Node.js, SQL, Docker, Laravel</dd>
+                <dt className={styles.skillsTitle}>Database:</dt>
+                  <dd className={styles.skillsItems}>MySQL, PostgreSQL</dd>
+                <dt className={styles.skillsTitle}>Cloud Tech:</dt>
+                  <dd className={styles.skillsItems}>AWS, Firebase, Heroku</dd>
+                <dt className={styles.skillsTitle}>Processes:</dt>
+                  <dd className={styles.skillsItems}>Agile methodology, Scrum</dd>
+                <dt className={styles.skillsTitle}>Testing:</dt>
+                  <dd className={styles.skillsItems}>Unit testing, JUnit, PHPUnit</dd>
+                <dt className={styles.skillsTitle}>Other:</dt>
+                  <dd className={styles.skillsItems}>RESTful APIs, Git, GitHub, Linux</dd>
+              </dl>
             </div>
           </div>
         </section>
