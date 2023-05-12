@@ -45,10 +45,7 @@ body {
 }
 
 .contact a {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 5px 10px;
     margin-left: 10px;
     margin-right: 10px;
     display: inline-block;
@@ -151,6 +148,9 @@ body {
 .projectsImage {
     background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/projects.jpg') no-repeat center center fixed;
     background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
     padding: 110px;
     margin: 0;
 }
@@ -197,6 +197,10 @@ body {
 .educationImage {
     background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/education.jpeg') no-repeat center center fixed;
     background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
     padding: 110px;
     margin: 0;
 }
@@ -260,6 +264,10 @@ body {
 .skillsImage {
     background: linear-gradient(rgba(156, 174, 169, 0.75), rgba(156, 174, 169, 0.75)), url('../../assets/skills.jpg') no-repeat center center fixed;
     background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
     padding: 110px;
     margin: 0;
 }
@@ -274,11 +282,24 @@ body {
 
 .skillsTitle {
     font-size: 130%;
+    font-weight: bold;
+}
+
+.skillsItemsPadding {
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .skillsItems {
-    font-size: 110%;
-    padding-left: 4%;
+    font-size: 110%;   
+    padding: 5px 10px;
+    margin: 5px 10px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1a6fed;
+    color: white;
+    border-radius: 5px;
 }
 
 /* Footer */
@@ -367,11 +388,6 @@ body {
         margin-bottom: 4%;
     }
 
-    /* Skills */
-    .skillsItems {
-        padding-left: 6%;
-    }
-
     /* Footer */
     .footerLinks a {
         padding-bottom: 6%;
@@ -389,11 +405,6 @@ body {
 
     .contact a {
         margin: 5px;
-    }
-
-    /* Skills */
-    .skillsItems {
-        padding-left: 8%;
     }
 
     /* Footer */

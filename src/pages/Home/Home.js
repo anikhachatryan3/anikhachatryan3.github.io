@@ -183,24 +183,60 @@ const Home = () => (
               <h1 className={styles.skillsImage} alt='skills image'>Skills</h1>
             </div>
             <div className={styles.skillsList}>
-              <dl>
-                <dt className={styles.skillsTitle}>Languages:</dt>
-                  <dd className={styles.skillsItems}>JavaScript, TypeScript, Java, C, Go, PHP</dd>
-                <dt className={styles.skillsTitle}>Frontend:</dt>
-                  <dd className={styles.skillsItems}>React.js, Vue.js, jQuery, Bootstrap, HTML, CSS</dd>
-                <dt className={styles.skillsTitle}>Backend:</dt>
-                  <dd className={styles.skillsItems}>Node.js, SQL, Docker, Laravel</dd>
-                <dt className={styles.skillsTitle}>Database:</dt>
-                  <dd className={styles.skillsItems}>MySQL, PostgreSQL</dd>
-                <dt className={styles.skillsTitle}>Cloud Tech:</dt>
-                  <dd className={styles.skillsItems}>AWS, Firebase, Heroku</dd>
-                <dt className={styles.skillsTitle}>Processes:</dt>
-                  <dd className={styles.skillsItems}>Agile methodology, Scrum</dd>
-                <dt className={styles.skillsTitle}>Testing:</dt>
-                  <dd className={styles.skillsItems}>Unit testing, JUnit, PHPUnit</dd>
-                <dt className={styles.skillsTitle}>Other:</dt>
-                  <dd className={styles.skillsItems}>RESTful APIs, Git, GitHub, Linux</dd>
-              </dl>
+              <div className={styles.skillsTitle}>Languages:</div>
+                <div className={styles.skillsItemsPadding}>
+                  <div className={styles.skillsItems}>JavaScript</div>
+                  <div className={styles.skillsItems}>TypeScript</div>
+                  <div className={styles.skillsItems}>Java</div>
+                  <div className={styles.skillsItems}>C</div>
+                  <div className={styles.skillsItems}>Go</div>
+                  <div className={styles.skillsItems}>PHP</div>
+                </div>
+              <div className={styles.skillsTitle}>Frontend:</div>
+                <div className={styles.skillsItemsPadding}>
+                  <div className={styles.skillsItems}>React.js</div>
+                  <div className={styles.skillsItems}>Vue.js</div>
+                  <div className={styles.skillsItems}>jQuery</div>
+                  <div className={styles.skillsItems}>Bootstrap</div>
+                  <div className={styles.skillsItems}>HTML</div>
+                  <div className={styles.skillsItems}>CSS</div>
+                </div>
+              <div className={styles.skillsTitle}>Backend:</div>
+                <div className={styles.skillsItemsPadding}>
+                  <div className={styles.skillsItems}>Node.js</div>
+                  <div className={styles.skillsItems}>SQL</div>
+                  <div className={styles.skillsItems}>Docker</div>
+                  <div className={styles.skillsItems}>Laravel</div>
+                </div>
+              <div className={styles.skillsTitle}>Database:</div>
+                <div className={styles.skillsItemsPadding}>
+                  <div className={styles.skillsItems}>MySQL</div>
+                  <div className={styles.skillsItems}>PostgreSQL</div>
+                </div>
+              <div className={styles.skillsTitle}>Cloud Tech:</div>
+                <div className={styles.skillsItemsPadding}>
+                  <div className={styles.skillsItems}>AWS</div>
+                  <div className={styles.skillsItems}>Firebase</div>
+                  <div className={styles.skillsItems}>Heroku</div>
+                </div>
+              <div className={styles.skillsTitle}>Processes:</div>
+                <div className={styles.skillsItemsPadding}>
+                  <div className={styles.skillsItems}>Agile methodology</div>
+                  <div className={styles.skillsItems}>Scrum</div>
+                </div>
+              <div className={styles.skillsTitle}>Testing:</div>
+                <div className={styles.skillsItemsPadding}>
+                  <div className={styles.skillsItems}>Unit testing</div>
+                  <div className={styles.skillsItems}>JUnit</div>
+                  <div className={styles.skillsItems}>PHPUnit</div>
+                </div>
+              <div className={styles.skillsTitle}>Other:</div>
+                <div className={styles.skillsItemsPadding}>
+                  <div className={styles.skillsItems}>RESTful APIs</div>
+                  <div className={styles.skillsItems}>Git</div>
+                  <div className={styles.skillsItems}>GitHub</div>
+                  <div className={styles.skillsItems}>Linux</div>
+                </div>
             </div>
           </div>
         </section>
