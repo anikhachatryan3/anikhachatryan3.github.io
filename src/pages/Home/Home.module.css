@@ -359,7 +359,7 @@ body {
     }
 
     /* Background Images */
-    .experienceImage, .projectsImage, .educationImage {
+    .experienceImage, .projectsImage, .educationImage, .skillsImage {
         background-attachment: initial;
     }
 
