@@ -9,7 +9,7 @@ const Home = () => (
   <>
   {/* Header */}
     <head>
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
       <title>Ani Khachatryan</title>
     </head>
     {/* Body */}

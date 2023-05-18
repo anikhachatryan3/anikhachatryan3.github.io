@@ -13,7 +13,7 @@ const NavBar = () => (
         <NavbarCollapse id='responsive-navbar-nav'>
         <Nav className={`${styles.navItems} ms-auto`}>
           <Nav.Link href='/'>Home</Nav.Link>
-          <Nav.Link href={resume} without rel='noreferrer' target='_blank'>Resume</Nav.Link>
+          <Nav.Link href={resume} rel='noreferrer' target='_blank'>Resume</Nav.Link>
         </Nav>
         </NavbarCollapse>
       </Container>
