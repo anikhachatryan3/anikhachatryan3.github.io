@@ -69,6 +69,11 @@ body {
     color: #d4d5d6;
 }
 
+.contact a .buttonIcon {
+    position: relative;
+    bottom: 1.5px;
+}
+
 /* Experience */
 .experienceWrapper {
     max-width: 100%;

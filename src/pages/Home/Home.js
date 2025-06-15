@@ -29,9 +29,9 @@ const Home = () => (
               different environments and situations.
             </p>
             <div className={styles.contact}>
-              <a href="mailto:anikhachatryan3@gmail.com"><GoMail /> Email</a>
-              <a href="https://www.linkedin.com/in/anikhachatryan3/" rel='noreferrer' target="_blank"><BsLinkedin /> LinkedIn</a>
-              <a href="https://github.com/anikhachatryan3" rel='noreferrer' target="_blank"><GoMarkGithub /> Github</a>
+              <a href="mailto:anikhachatryan3@gmail.com"><GoMail className={styles.buttonIcon} /> Email</a>
+              <a href="https://www.linkedin.com/in/anikhachatryan3/" rel='noreferrer' target="_blank"><BsLinkedin className={styles.buttonIcon} /> LinkedIn</a>
+              <a href="https://github.com/anikhachatryan3" rel='noreferrer' target="_blank"><GoMarkGithub className={styles.buttonIcon} /> Github</a>
             </div>
           </div>
         </section>
@@ -41,27 +41,55 @@ const Home = () => (
             <div>
               <h1 className={styles.experienceImage} alt='experience image'>Experience</h1>
             </div>
+            {/* Houlihan Lokey */}
+            <div className={styles.work}>
+              <div className={styles.workTitle}>
+                <h2>Houlihan Lokey</h2>
+              </div>
+              <div className={styles.workDate}>
+                <p>July 2023 - Present</p>
+              </div>
+              <div className={styles.workPosition}>
+                <p>Software Developer I</p>
+              </div>
+              <div className={`${styles.workDescription} ${styles.hlDescription}`}>
+                <p>I am working as a Software Developer I for Houlihan Lokey. I work on the website 
+                  specifically created for the employees and bankers, called Vault. It has different 
+                  categories; each of them has a listing page and an info page. The listing page 
+                  displays all records (or a specific variant from each record) and has filters that 
+                  the user can use to filter and find results/records they specifically want. The info 
+                  page displays all the data for each record. Some categories also have upload and edit 
+                  pages. For some of these categories, the data is retrieved from SharePoint and stored 
+                  in a database table specifically created for it, so we can provide filters for the 
+                  user.</p>
+              </div>
+              <div className={`${styles.workTechnologies} ${styles.hlTechnologies}`}>
+                <ul>
+                  <li><b><i>Languages and Frameworks:</i></b>&ensp;C#, ASP.NET, JavaScript, MySQL, SharePoint Online, Microsoft Graph API, Git, GitHub</li>
+                </ul>
+              </div>
+            </div>
             {/* Flowductive */}
             <div className={styles.work}>
               <div className={styles.workTitle}>
                 <h2>Flowductive</h2>
               </div>
               <div className={styles.workDate}>
-                <p>July 2022 - Present</p>
+                <p>July 2022 - July 2023</p>
               </div>
               <div className={styles.workPosition}>
                 <p>Software Development Engineer</p>
               </div>
               <div className={`${styles.workDescription} ${styles.flowductiveDescription}`}>
-                <p>I am working as a Software Development Engineer for Flowductive, which is an application 
-                  that allows the user to commit their time to being productive in a fun and unique way. I am 
-                  working on the development of the web application of Flowductive, such as the login page, 
+                <p>I worked as a Software Development Engineer for Flowductive, which is an application 
+                  that allows the user to commit their time to being productive in a fun and unique way. I 
+                  worked on the development of the web application of Flowductive, such as the login page, 
                   create account page, creating and adding the functionality for certain buttons, etc. The 
                   technologies being used are React.js, TypeScript, and Firebase.</p>
               </div>
               <div className={`${styles.workTechnologies} ${styles.flowductiveTechnologies}`}>
                 <ul>
-                  <li><b><i>Languages and Frameworks:</i></b>&ensp;React.js, TypeScript, Firebase</li>
+                  <li><b><i>Languages and Frameworks:</i></b>&ensp;React.js, TypeScript, Firebase, Git, GitHub</li>
                 </ul>
               </div>
             </div>
@@ -187,6 +215,7 @@ const Home = () => (
                 <div className={styles.skillsItemsPadding}>
                   <div className={styles.skillsItems}>JavaScript</div>
                   <div className={styles.skillsItems}>TypeScript</div>
+                  <div className={styles.skillsItems}>C#</div>
                   <div className={styles.skillsItems}>Java</div>
                   <div className={styles.skillsItems}>C</div>
                   <div className={styles.skillsItems}>Go</div>
@@ -203,6 +232,7 @@ const Home = () => (
                 </div>
               <div className={styles.skillsTitle}>Backend:</div>
                 <div className={styles.skillsItemsPadding}>
+                  <div className={styles.skillsItems}>ASP.NET</div>
                   <div className={styles.skillsItems}>Node.js</div>
                   <div className={styles.skillsItems}>SQL</div>
                   <div className={styles.skillsItems}>Docker</div>
