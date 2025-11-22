@@ -50,22 +50,48 @@ const Home = () => (
                 <p>July 2023 - Present</p>
               </div>
               <div className={styles.workPosition}>
-                <p>Software Developer I</p>
+                <p>Software Developer</p>
               </div>
               <div className={`${styles.workDescription} ${styles.hlDescription}`}>
-                <p>I am working as a Software Developer I for Houlihan Lokey. I work on the website 
-                  specifically created for the employees and bankers, called Vault. It has different 
-                  categories; each of them has a listing page and an info page. The listing page 
-                  displays all records (or a specific variant from each record) and has filters that 
-                  the user can use to filter and find results/records they specifically want. The info 
-                  page displays all the data for each record. Some categories also have upload and edit 
-                  pages. For some of these categories, the data is retrieved from SharePoint and stored 
-                  in a database table specifically created for it, so we can provide filters for the 
-                  user.</p>
+                <p>I am working as a Software Developer I for Houlihan Lokey. I've worked on many different 
+                  projects during my time here. Here are a couple notable ones:</p>
+                <ul>
+                  <li>
+                    <b>VAULT:</b>
+                    <p>
+                      I've worked on a web application called VAULT, which is used by bankers for accessing and 
+                      downloading company assets using RBAC. I've optimized the loading times of the pages by using 
+                      background handlers to asynchronously load the images and cache them for 5 minutes after 
+                      initial load. I utilized SSL for logging user activity to the on-premise database table for user 
+                      analytics. I also created a tool that syncs SharePoint metadata to the respective on-premise 
+                      database table for faster loading and filtering times. I have rewritten repetitive and 
+                      redundant code into reusable functions that are used all throughout the project.</p>
+                  </li>
+                  <li>
+                    <b>Logo Architect:</b>
+                    <p>
+                      I've also worked on a web application called Logo Architect, which was created in-house as a 
+                      replacement for Logo Intern, a web application created by an outside vendor. It allows users to 
+                      directly work with company-specific assets, and has allowed the company to save $250,000 USD 
+                      annually. I optimized the loading time for over 10,000 records from 2 minutes down to 15 seconds, 
+                      using lazy loading and a background handler to asynchronously load the images and cache them for 
+                      5 minutes.
+                    </p>
+                  </li>
+                  <li>
+                    <b>SharePointToBlobMigrator:</b>
+                    <p>
+                      I've worked on an Azure Function App called SharePointToBlobMigrator, which is used for syncing 
+                      SharePoint metadata to the Azure SQL Managed Instance and uploads the assets to the specified 
+                      Azure Blob Storage Container with 50 MB chunking. I also worked on the CI/CD pipeline for 
+                      continuous deployment of the Azure Function App whenever we update the master branch.
+                    </p>
+                  </li>
+                </ul>
               </div>
               <div className={`${styles.workTechnologies} ${styles.hlTechnologies}`}>
                 <ul>
-                  <li><b><i>Languages and Frameworks:</i></b>&ensp;C#, ASP.NET, JavaScript, MySQL, SharePoint Online, Microsoft Graph API, Git, GitHub</li>
+                  <li><b><i>Languages and Frameworks:</i></b>&ensp;C#, ASP.NET, JavaScript, MySQL, VB.NET, SharePoint Online, Microsoft Graph API, Azure, Git, GitHub</li>
                 </ul>
               </div>
             </div>
@@ -196,7 +222,7 @@ const Home = () => (
               </div>
               <div className={styles.csunAchievements}>
                 <ul>
-                  <li><b><i>Achievements:</i></b>&ensp;Graduated with Honors, Dean's List for multiple semesters</li>
+                  <li><b><i>Achievements:</i></b>&ensp;Graduated with Honors, Dean's List for multiple semesters for good academic achievements/performance</li>
                   <li><b><i>Courses:</i></b>&ensp;Senior Design Project, Object-Oriented Software Development, Algorithm 
                   Design and Analysis, Advanced Web Engineering, Database Design, Web Engineering, Graphical User Interfaces</li>
                 </ul>
@@ -242,9 +268,11 @@ const Home = () => (
                 <div className={styles.skillsItemsPadding}>
                   <div className={styles.skillsItems}>MySQL</div>
                   <div className={styles.skillsItems}>PostgreSQL</div>
+                  <div className={styles.skillsItems}>Azure SQL Managed Instance</div>
                 </div>
               <div className={styles.skillsTitle}>Cloud Tech:</div>
                 <div className={styles.skillsItemsPadding}>
+                  <div className={styles.skillsItems}>Azure</div>
                   <div className={styles.skillsItems}>AWS</div>
                   <div className={styles.skillsItems}>Firebase</div>
                   <div className={styles.skillsItems}>Heroku</div>
