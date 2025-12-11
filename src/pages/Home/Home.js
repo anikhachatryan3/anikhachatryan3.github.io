@@ -22,11 +22,13 @@ const Home = () => (
           </div>
           <div className={styles.wide}>
             <p className={styles.about}>
-              Welcome to my website! My name is Ani Khachatryan, and I am a computer science graduate from California 
-              State University, Northridge who is currently seeking a job. I have experience in building web 
-              applications from internships, bootcamps, hackathons, and personal projects. I am a dedicated and 
-              hardworking person who is both an independent learner and a team player, and can quickly adapt to 
-              different environments and situations.
+              Welcome to my website! My name is Ani Khachatryan, and I am a Software Engineer who is currently 
+              seeking new job opportunities. I have 3 years of professional experience developing web applications, 
+              and I have experience in Azure development. I also have experience in building web applications
+              from internships, bootcamps, hackathons, and personal projects. I am a dedicated and hardworking
+              person who is both an independent learner and a team player, and can quickly adapt to different
+              environments and situations. I am also willing to learn any new languages, frameworks, and 
+              technologies.
             </p>
             <div className={styles.contact}>
               <a href="mailto:anikhachatryan3@gmail.com"><GoMail className={styles.buttonIcon} /> Email</a>
