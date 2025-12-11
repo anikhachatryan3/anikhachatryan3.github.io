@@ -93,7 +93,7 @@ const Home = () => (
               </div>
               <div className={`${styles.workTechnologies} ${styles.hlTechnologies}`}>
                 <ul>
-                  <li><b><i>Languages and Frameworks:</i></b>&ensp;C#, ASP.NET, JavaScript, MySQL, VB.NET, SharePoint Online, Microsoft Graph API, Azure, Git, GitHub</li>
+                  <li><b><i>Languages and Frameworks:</i></b>&ensp;C#, ASP.NET, JavaScript, SQL, MySQL, Microsoft SQL Server, VB.NET, SharePoint Online, Microsoft Graph API, Azure, Git, GitHub, Bitbucket</li>
                 </ul>
               </div>
             </div>
@@ -270,6 +270,7 @@ const Home = () => (
                 <div className={styles.skillsItemsPadding}>
                   <div className={styles.skillsItems}>MySQL</div>
                   <div className={styles.skillsItems}>PostgreSQL</div>
+                  <div className={styles.skillsItems}>Microsoft SQL Server</div>
                   <div className={styles.skillsItems}>Azure SQL Managed Instance</div>
                 </div>
               <div className={styles.skillsTitle}>Cloud Tech:</div>
@@ -295,6 +296,7 @@ const Home = () => (
                   <div className={styles.skillsItems}>RESTful APIs</div>
                   <div className={styles.skillsItems}>Git</div>
                   <div className={styles.skillsItems}>GitHub</div>
+                  <div className={styles.skillsItems}>Bitbucket</div>
                   <div className={styles.skillsItems}>Linux</div>
                 </div>
             </div>
