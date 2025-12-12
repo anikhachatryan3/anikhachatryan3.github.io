@@ -323,8 +323,21 @@ body {
     color: black;
 }
 
+/* Tablet size - Horizontal/Landscape */
+@media only screen and (min-device-width: 768px) 
+                   and (max-device-width: 1200px) 
+                   and (orientation: landscape) 
+                   and (-webkit-min-device-pixel-ratio: 1) {
 
-/* Tablet size */
+    /* Background Images */
+    .experienceImage, .projectsImage, .educationImage, .skillsImage {
+        background-attachment: initial;
+        padding: 150px;
+    }
+
+}
+
+/* Tablet size - Vertical */
 @media (max-width: 991px) {
     /* About */
     .image {
