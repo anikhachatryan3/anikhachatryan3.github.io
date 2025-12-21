@@ -76,7 +76,7 @@ const Home = () => (
                       replacement for Logo Intern, a web application created by an outside vendor. It allows users to 
                       directly work with company-specific assets, and has allowed the company to save $250,000 USD 
                       annually. I optimized the loading time for over 10,000 records from 2 minutes down to 15 seconds, 
-                      using lazy loading and a background handler to asynchronously load the images and cache them for 
+                      using client-side pagination and a background handler to asynchronously load the images and cache them for 
                       5 minutes.
                     </p>
                   </li>
