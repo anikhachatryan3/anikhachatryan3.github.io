@@ -1,5 +1,5 @@
 html {
-    color: black;
+    color: var(--font-color);
     box-sizing: border-box;
 }
 
@@ -9,6 +9,7 @@ html {
 
 body {
     margin: 0;
+    background-color: var(--body-color) !important;
 }
 
 /* About */
@@ -19,6 +20,7 @@ body {
     overflow: hidden;
     display: flex;
     align-items: center; 
+    color: var(--font-color);
 }
 
 .narrow {
@@ -50,8 +52,8 @@ body {
     margin-right: 10px;
     display: inline-block;
     text-decoration: none;
-    background-color: #0d6efd;
-    color: white;
+    background-color: var(--contact-button-background-color);
+    color: var(--contact-button-font-color);
     border-radius: 5px;
 }
 
@@ -60,13 +62,13 @@ body {
     -o-transition: all .1s ease-in;
     -webkit-transition: all .1s ease-in;
     transition: all .1s ease-in;
-    background-color: #0d5cd4;
-    color: #e6e7e8;
+    background-color: var(--contact-button-hover-background-color);
+    color: var(--contact-button-hover-font-color);
 }
 
 .contact a:focus {
-    background-color: #0650bf;
-    color: #d4d5d6;
+    background-color: var(--contact-button-active-background-color);
+    color: var(--contact-button-active-font-color);
 }
 
 .contact a .buttonIcon {
@@ -83,7 +85,7 @@ body {
 }
 
 .experienceImage {
-    background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/experience.jpg') no-repeat center center fixed;
+    background: linear-gradient(var(--background-image-gradient-color), var(--background-image-gradient-color)), url('../../assets/experience.jpg') no-repeat center center fixed;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -99,6 +101,7 @@ body {
     display: grid;
     grid-template-columns: 65% 35%;
     grid-template-rows: repeat(1, 1fr);
+    color: var(--font-color);
 }
 
 .workTitle:nth-child(1) {
@@ -151,7 +154,7 @@ body {
 }
 
 .projectsImage {
-    background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/projects.jpg') no-repeat center center fixed;
+    background: linear-gradient(var(--background-image-gradient-color), var(--background-image-gradient-color)), url('../../assets/projects.jpg') no-repeat center center fixed;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -165,6 +168,7 @@ body {
     padding-left: 8%;
     padding-right: 8%;
     display: grid;
+    color: var(--font-color);
 }
 
 .projectTitle {
@@ -200,7 +204,7 @@ body {
 }
 
 .educationImage {
-    background: linear-gradient(rgba(156, 174, 169, 0.65), rgba(156, 174, 169, 0.65)), url('../../assets/education.jpeg') no-repeat center center fixed;
+    background: linear-gradient(var(--background-image-gradient-color), var(--background-image-gradient-color)), url('../../assets/education.jpeg') no-repeat center center fixed;
     background-size: cover;
     background-size: cover;
     -moz-background-size: cover;
@@ -218,6 +222,7 @@ body {
     display: grid;
     grid-template-columns: 65% 35%;
     grid-template-rows: repeat(1, 1fr);
+    color: var(--font-color);
 }
 
 .csunTitle:nth-child(1) {
@@ -267,7 +272,7 @@ body {
 }
 
 .skillsImage {
-    background: linear-gradient(rgba(156, 174, 169, 0.75), rgba(156, 174, 169, 0.75)), url('../../assets/skills.jpg') no-repeat center center fixed;
+    background: linear-gradient(var(--skills-gradient-color), var(--skills-gradient-color)), url('../../assets/skills.jpg') no-repeat center center fixed;
     background-size: cover;
     background-size: cover;
     -moz-background-size: cover;
@@ -283,6 +288,7 @@ body {
     padding-left: 8%;
     padding-right: 8%;
     padding-bottom: 2%;
+    color: var(--font-color);
 }
 
 .skillsTitle {
@@ -310,6 +316,7 @@ body {
 .footerTitle {
     font-size: 120%;
     margin-bottom: -0.6%;
+    color: var(--font-color);
 }
 
 .footerLinks a {
@@ -320,7 +327,11 @@ body {
 }
 
 .github {
-    color: black;
+    color: var(--font-color);
+}
+
+.github:hover {
+    color: var(--item-hover-color);
 }
 
 /* Tablet size - Horizontal/Landscape */

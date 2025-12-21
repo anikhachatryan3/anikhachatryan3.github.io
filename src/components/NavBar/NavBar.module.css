@@ -1,11 +1,84 @@
 .navBar {
-    background-color: white !important;
+    background-color: var(--body-color) !important;
+    color: var(--font-color) !important;
 }
 
 .navTitle {
     font-size: 25px !important;
+    color: var(--font-color) !important;
+}
+
+.navBarToggle {
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .navItems {
     font-size: 20px !important;
+    color: var(--font-color) !important;
+}
+
+.navDropdownItem {
+    text-align: center !important;
+}
+
+.navBarLink,
+.navDropdownMenu :global(.dropdown-toggle.nav-link),
+.navDropdownItem {
+    color: var(--font-color) !important;
+}
+
+.navBarToggle:hover,
+.navBarLink:hover,
+.navDropdownMenu :global(.dropdown-toggle.nav-link):hover:not(:has(:global(.navDropdownItem:hover))),
+.navDropdownItem:hover {
+    background-color: var(--item-hover-color) !important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.navBarToggle:not(:global(.collapsed)),
+.navDropdownItem:global(.active) {
+    background-color: var(--item-active-color) !important;
+    font-weight: bold;
+}
+
+.navDropdownItem:global(.active):hover {
+    background-color: var(--item-active-hover-color) !important;
+}
+
+/* These need :global to be able to target the dropdown menu  */
+.navDropdownMenu :global(.dropdown-menu) {
+    background-color: var(--body-color) !important;
+    margin-top: 0 !important;
+    border: 0;
+    border-width: 0;
+    border-radius: 0;
+    padding: 0 !important;
+    display: block !important;
+    opacity: 0;
+    transform: translateY(-10px); 
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden; 
+    pointer-events: none;
+    transition: max-height 0.5s ease, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.navDropdownMenu :global(.dropdown-menu.show) {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 64px;
+    visibility: visible; 
+    pointer-events: auto;
+}
+
+.navDropdownMenu.closing :global(.dropdown-menu) {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height 0.5s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+:global(html.darkTheme) .navBarToggle span {
+    background-image: var(--light-hamburger-bar-icon) !important;
 }
