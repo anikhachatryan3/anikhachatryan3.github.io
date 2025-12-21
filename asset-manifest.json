@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.5e688d20.css",
-    "main.js": "/static/js/main.91662f90.js",
+    "main.js": "/static/js/main.ad3efc9b.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/experience.jpg": "/static/media/experience.8fc944de857f5f49ecee.jpg",
     "static/media/education.jpeg": "/static/media/education.e6cdd7ac22d1273f9f9c.jpeg",
     "static/media/Ani.jpg": "/static/media/Ani.967153fddd3df057a81b.jpg",
     "static/media/skills.jpg": "/static/media/skills.1030e8acc85d1b1cc2cf.jpg",
     "static/media/projects.jpg": "/static/media/projects.3d46dc36188ff73fe9aa.jpg",
-    "static/media/AniKhachatryan_Resume.pdf": "/static/media/AniKhachatryan_Resume.f6912032d90199899860.pdf",
+    "static/media/AniKhachatryan_Resume.pdf": "/static/media/AniKhachatryan_Resume.0e997eb57a79dca875ef.pdf",
     "index.html": "/index.html",
     "static/media/hamburger-bar.svg": "/static/media/hamburger-bar.6c622c1e20a48d339590.svg",
     "main.5e688d20.css.map": "/static/css/main.5e688d20.css.map",
-    "main.91662f90.js.map": "/static/js/main.91662f90.js.map",
+    "main.ad3efc9b.js.map": "/static/js/main.ad3efc9b.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e688d20.css",
-    "static/js/main.91662f90.js"
+    "static/js/main.ad3efc9b.js"
   ]
 }
