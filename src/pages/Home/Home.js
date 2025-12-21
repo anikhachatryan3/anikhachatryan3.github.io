@@ -8,12 +8,20 @@ import { FaReact } from 'react-icons/fa';
 const Home = () => (
   <>
   {/* Header */}
-    <head>
-      <meta charSet="UTF-8" />
+    {/* <head>
+      <meta charset="utf-8" />
+      <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+      <meta
+        name="description"
+        content="Web site created using create-react-app"
+      />
+      <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       <title>Ani Khachatryan</title>
-    </head>
+    </head> */}
     {/* Body */}
-    <body>
+    {/* <body> */}
       <main>
         {/* About Section */}
         <section className={styles.aboutWrapper} alt="about" >
@@ -303,7 +311,7 @@ const Home = () => (
           </div>
         </section>
       </main>
-    </body>
+    {/* </body> */}
     {/* Footer */}
     <footer>
       <hr />
