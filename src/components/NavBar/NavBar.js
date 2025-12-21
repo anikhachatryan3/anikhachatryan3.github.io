@@ -21,6 +21,22 @@ const NavBar = () => {
     document.documentElement.className = selectedId;
   };
 
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [closing, setClosing] = useState(false);
+
+  // This is used for trying to add a smooth transition to the dropdown items
+  const handleToggle = (isOpen) => {
+    if (!isOpen) {
+      setClosing(true);
+      setTimeout(() => {
+        setShowDropdown(false);
+        setClosing(false);
+      }, 300);
+    } else {
+      setShowDropdown(true);
+    }
+  };
+
   return (
     <Navbar sticky='top' expand='lg' className={styles.navBar}>
       <Container fluid>
@@ -30,7 +46,7 @@ const NavBar = () => {
           <Nav className={`${styles.navItems} ms-auto`}>
             <Nav.Link className={`${styles.navBarLink}`} href='/'>Home</Nav.Link>
             <Nav.Link className={`${styles.navBarLink}`} href={resume} rel='noreferrer' target='_blank'>Resume</Nav.Link>
-            <NavDropdown align="end" title="Themes" id="themeDropdown" className={`${styles.navDropdownMenu}`}>
+            <NavDropdown align="end" title="Themes" id="themeDropdown" show={showDropdown || closing} onToggle={handleToggle} className={`${styles.navDropdownMenu} ${closing ? styles.closing : ''}`} renderMenuOnMount={true}>
               <NavDropdown.Item id="lightTheme" onClick={toggleThemeColor} active={activeTheme === 'lightTheme'} className={`${styles.navDropdownItem}`}>Light</NavDropdown.Item>
               <NavDropdown.Item id="darkTheme" onClick={toggleThemeColor} active={activeTheme === 'darkTheme'} className={`${styles.navDropdownItem}`}>Dark</NavDropdown.Item>
             </NavDropdown>
