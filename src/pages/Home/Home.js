@@ -77,10 +77,14 @@ const Home = () => (
                 <li>
                   <b>SharePointToBlobMigrator:</b>
                   <p>
-                    I've worked on an Azure Function App called SharePointToBlobMigrator, which is used for syncing 
-                    SharePoint metadata to the Azure SQL Managed Instance and uploads the assets to the specified 
-                    Azure Blob Storage Container with 50 MB chunking. I also worked on the CI/CD pipeline for 
-                    continuous deployment of the Azure Function App whenever we update the master branch.
+                    I've also worked on SharePointToBlobMigrator, an Azure Function App that is used for syncing  
+                    SharePoint metadata to the Azure SQL Managed Instance and uploads the SharePoint assets to the 
+                    specified Azure Blob Storage Container with 50 MB chunking. I did this by creating 2 timer triggers 
+                    to sync the database, 1 to sync every hour and 1 to sync at a set time daily, by utilizing Microsoft 
+                    Graph API delta queries for more optimal performance, and a global lock mechanism to prevent race   
+                    conditions. I also created logic to detect and break any rare potential deadlock occurrences. I   
+                    also worked on the CI/CD pipeline for continuous deployment of the Azure Function App whenever we  
+                    update the master branch.
                   </p>
                 </li>
               </ul>
