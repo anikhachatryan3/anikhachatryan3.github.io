@@ -49,7 +49,7 @@ const Home = () => (
               <p>Software Developer</p>
             </div>
             <div className={`${styles.workDescription} ${styles.hlDescription}`}>
-              <p>I am working as a Software Developer I for Houlihan Lokey. I've worked on many different 
+              <p>I am working as a Software Developer for Houlihan Lokey. I've worked on many different 
                 projects during my time here. Here are a couple notable ones:</p>
               <ul>
                 <li>
@@ -79,12 +79,14 @@ const Home = () => (
                   <p>
                     I've also worked on SharePointToBlobMigrator, an Azure Function App that is used for syncing  
                     SharePoint metadata to the Azure SQL Managed Instance and uploads the SharePoint assets to the 
-                    specified Azure Blob Storage Container with 50 MB chunking. I did this by creating 2 timer triggers 
-                    to sync the database, 1 to sync every hour and 1 to sync at a set time daily, by utilizing Microsoft 
-                    Graph API delta queries for more optimal performance, and a global lock mechanism to prevent race   
-                    conditions. I also created logic to detect and break any rare potential deadlock occurrences. I   
-                    also worked on the CI/CD pipeline for continuous deployment of the Azure Function App whenever we  
-                    update the master branch.
+                    specified Azure Blob Storage Container with chunking. I did this by creating 2 timer triggers 
+                    to sync the database, 1 to sync every hour and 1 to sync at a set time daily, and an orchestrator 
+                    to run the long process of the sync. By utilizing Microsoft Graph API delta queries, I was able to 
+                    create a more optimal performance for the timer triggers. I utilize SQL system procedure queries 
+                    using sp_getapplock and sp_releaseapplock to create an exclusive lock for each SharePoint list 
+                    being synced. I also created a table that reflects the results of the lock queries being ran, 
+                    which helps visualize if the list is currently syncing or not. I also worked on the CI/CD pipeline 
+                    for continuous deployment of the Azure Function App whenever we update the master branch.
                   </p>
                 </li>
               </ul>
